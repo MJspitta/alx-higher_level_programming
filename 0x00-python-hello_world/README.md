@@ -21,3 +21,5 @@
 9. Write a Python script that prints “The Zen of Python”, by TimPeters
 
 10. Linked List Cycle
+
+100. Python script that prints with write
