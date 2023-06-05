@@ -23,3 +23,5 @@
 10. Linked List Cycle
 
 100. Python script that prints with write
+
+101. Write a script that compiles a Python script file
