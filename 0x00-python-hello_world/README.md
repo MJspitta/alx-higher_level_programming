@@ -19,3 +19,5 @@
 8. Create a new sentence
 
 9. Write a Python script that prints “The Zen of Python”, by TimPeters
+
+10. Linked List Cycle
