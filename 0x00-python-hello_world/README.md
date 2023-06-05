@@ -7,3 +7,5 @@
 2. Write a Python script that prints exactly a statement followed by a new line
 
 3. Print integer
+
+4. Print float
