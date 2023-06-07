@@ -25,3 +25,5 @@
 11. a ^ b
 
 12. Fizz Buzz
+
+13. Insert in sorted linked list
