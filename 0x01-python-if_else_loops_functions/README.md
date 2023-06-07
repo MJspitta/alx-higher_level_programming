@@ -29,3 +29,5 @@
 13. Insert in sorted linked list
 
 14. Smile in the mirror
+
+15. Remove at position
