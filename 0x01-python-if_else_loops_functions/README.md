@@ -27,3 +27,5 @@
 12. Fizz Buzz
 
 13. Insert in sorted linked list
+
+14. Smile in the mirror
