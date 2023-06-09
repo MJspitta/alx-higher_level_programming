@@ -17,3 +17,5 @@
 7. Easy print
 
 8. ByteCode -> Python #3
+
+9. Fast alphabet
