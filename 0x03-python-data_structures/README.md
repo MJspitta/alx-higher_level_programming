@@ -25,3 +25,5 @@
 11. Delete at
 
 12. Switch
+
+13. Linked list palindrome
