@@ -7,3 +7,5 @@
 2. Replace element
 
 3. Print a list of integers... in reverse!
+
+4. Replace in a copy
