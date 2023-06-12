@@ -16,7 +16,7 @@ int is_palindrome(listint_t **head)
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
 
-	while (!fast && fast->next != NULL)
+	while (fast != NULL && fast->next != NULL)
 	{
 		slow = slow->next;
 		fast = fast->next->next;
@@ -46,7 +46,7 @@ listint_t *rev_list(listint_t **head)
 	listint_t *current = *head;
 	listint_t *next;
 
-	while (!current)
+	while (current != NULL)
 	{
 		next = current->next;
 		current->next = prev;
