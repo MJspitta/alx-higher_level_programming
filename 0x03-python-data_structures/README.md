@@ -15,3 +15,5 @@
 6. Lists of lists = Matrix
 
 7. Tuples addition
+
+8. More returns!
