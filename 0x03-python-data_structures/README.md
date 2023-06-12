@@ -9,3 +9,5 @@
 3. Print a list of integers... in reverse!
 
 4. Replace in a copy
+
+5. Can you C me now?
