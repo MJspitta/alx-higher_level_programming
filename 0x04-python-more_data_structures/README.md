@@ -31,3 +31,5 @@
 14. Squared by using map
 
 15. Delete by value
+
+16. CPython #1: PyBytesObject
