@@ -7,7 +7,7 @@ def roman_to_int(roman_string):
     total_num = 0
     last_val = 0
 
-    if type(roman_string) != str or roman_string == None:
+    if type(roman_string) != str or roman_string is None:
         return 0
     for r in reversed(roman_string):
         val = roman_num[r]
