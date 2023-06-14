@@ -29,3 +29,5 @@
 13. Weighted average!
 
 14. Squared by using map
+
+15. Delete by value
