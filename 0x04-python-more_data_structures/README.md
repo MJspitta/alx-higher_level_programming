@@ -9,3 +9,5 @@
 3. Present in both
 
 4. Only differents
+
+5. Number of keys
