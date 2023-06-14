@@ -3,7 +3,7 @@ def weight_average(my_list=[]):
     top = 0
     bottom = 0
 
-    if my_list is None:
+    if not my_list:
         return 0
     for x in my_list:
         top += (x[0] * x[1])
