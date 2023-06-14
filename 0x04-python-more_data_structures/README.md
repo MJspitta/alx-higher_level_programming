@@ -27,3 +27,5 @@
 12. Roman to Integer
 
 13. Weighted average!
+
+14. Squared by using map
