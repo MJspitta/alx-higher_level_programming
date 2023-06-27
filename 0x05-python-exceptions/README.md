@@ -17,3 +17,5 @@
 7. Safe integer print with error message
 
 8. Safe function
+
+9. ByteCode -> Python #4
