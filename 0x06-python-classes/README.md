@@ -15,3 +15,5 @@
 6. Coordinates of a square
 
 7. Singly linked list
+
+8. Print Square instance
