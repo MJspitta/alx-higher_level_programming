@@ -9,3 +9,5 @@
 3. Area of a square
 
 4. Access and update private attribute
+
+5. Printing a square
