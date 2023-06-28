@@ -34,7 +34,7 @@ class Square:
                 for k in range(self.__size):
                     finalprint += "#"
                 finalprint += "\n"
-            return finalprint
+            return finalprint.rstrip("\n")
 
     @property
     def size(self):
