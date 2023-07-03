@@ -22,7 +22,9 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        rect_angle = "\n".join([str(self.print_symbol) * self.__width] * self.__height)
+        rect_angle = "\n".join(
+                [str(self.print_symbol) * self.__width] * self.__height
+                )
         return rect_angle
 
     def __repr__(self):
