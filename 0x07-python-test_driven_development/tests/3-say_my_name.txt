@@ -1,0 +1,23 @@
+==================================================
+Test cases for function that prints name in format
+==================================================
+
+Importing the method to test
+============================
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test cases
+==========
+>>> say_my_name("Madu", "Jang")
+My name is Madu Jang
+
+>>> say_my_name("John")
+My name is John
+
+>>> say_my_name("Madu", 1212)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name(1212)
+Traceback (most recent call last):
+TypeError: first_name must be a string
