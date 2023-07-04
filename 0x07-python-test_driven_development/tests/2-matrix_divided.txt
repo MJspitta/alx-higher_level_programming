@@ -1,0 +1,57 @@
+===============================================================
+Test cases for a function that divides all elements in a matrix
+===============================================================
+
+Importing the method to test
+============================
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Various test cases
+==================
+Test case for integer and float
+::
+	>>> matrix = [[2, 4, 6], [1, 3, 5], [10, 20, 30]]
+	>>> div = 2
+	>>> matrix_divided(matrix, div)
+	[[1.0, 2.0, 3.0], [0.5, 1.5, 2.5], [5.0, 10.0, 15.0]]
+
+	>>> matrix = [[1.5, 2.5], [3.5, 4.5]]
+	>>> div = 0.5
+	>>> matrix_divided(matrix, div)
+	[[3.0, 5.0], [7.0, 9.0]]
+
+Test case for zero
+::
+	>>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+	>>> div = 0
+	>>> matrix_divided(matrix, div)
+	Traceback (most recent call last):
+	ZeroDivisionError: division by zero
+
+Test case for size of matrix
+::
+	>>> matrix = [[1, 2, 3], [4, 5], [6, 7, 8]]
+	>>> div = 2
+	>>> matrix_divided(matrix, div)
+	Traceback (most recent call last):
+	TypeError: Each row of the matrix must have the same size
+
+Test case for type
+::
+	>>> matrix = "not a matrix"
+	>>> div = 2
+	>>> matrix_divided(matrix, div)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+	>>> matrix = [[1, 2], [3, '4']]
+	>>> div = 2
+	>>> matrix_divided(matrix, div)
+	Traceback (most recent call last):
+	TypeError: unsupported operand type(s) for /: 'str' and 'int'
+
+	>>> matrix = [[1, 2], [3, 4]]
+	>>> div = '2'
+	>>> matrix_divided(matrix, div)
+	Traceback (most recent call last):
+	TypeError: div must be a number
