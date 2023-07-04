@@ -9,3 +9,5 @@
 3. Print square
 
 4. Text indentation
+
+5. Max integer - Unittest
