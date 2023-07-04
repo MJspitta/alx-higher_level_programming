@@ -1,0 +1,32 @@
+====================================
+Test cases for function that prints
+text with 2 new lines after each of
+these characters: ., ? and :
+====================================
+
+Import the method to test
+=========================
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test cases
+==========
+>>> text_indentation("How are you?")
+How are you?
+
+>>> text_indentation("This is Madu. He likes: Rice and Beans.")
+This is Madu.
+<BLANKLINE>
+ He likes:
+<BLANKLINE>
+ Rice and Beans.
+
+>>> text_indentation("No punctuation marks")
+No punctuation marks
+
+>>> text_indentation(1212)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indentation(["Welcome", "Madu"])
+Traceback (most recent call last):
+TypeError: text must be a string
