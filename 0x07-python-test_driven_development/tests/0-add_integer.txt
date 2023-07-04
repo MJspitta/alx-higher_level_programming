@@ -1,0 +1,56 @@
+==============================================
+Test case for a function that adds 2 integers
+==============================================
+
+Importing the method to test
+=============================
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Various test cases
+==================
+Test default value
+::
+	>>> print(add_integer(2))
+	100
+
+Test ints and floats
+::
+	>>> print(add_integer(5, 3))
+	8
+	>>> print(add_integer(4.5, 8.3))
+	12
+
+Test negative ints and floats
+::
+	>>> print(add_integer(-5, -3))
+	-8
+	>>> print(add_integer(-4.5, -8.3))
+	-12
+	>>> print(add_integer(-4.5, 8.3))
+	4
+
+Test zero
+::
+	>>> print(add_integer(0, -3))
+	-3
+	>>> print(add_integer(4.5, 0))
+	4
+
+Errors
+========
+
+>>> print(add_integer("5", "3"))
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> print(add_integer(None, 3))
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> print(add_integer(5, "3"))
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> print(add_integer(5, 8 + 2j)):
+Traceback (most recent call last):
+SyntaxError: invalid syntax
