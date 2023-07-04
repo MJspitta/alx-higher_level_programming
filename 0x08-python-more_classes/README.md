@@ -19,3 +19,5 @@
 8. Compare rectangles
 
 9. A square is a rectangle
+
+10. N queens
