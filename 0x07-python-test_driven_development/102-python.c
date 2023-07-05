@@ -1,10 +1,9 @@
-#include <Python.h>
+#include "Python.h"
 
 void print_python_string(PyObject *p)
 {
-	Py_ssize_t len;
+	Py_ssize_t len, i;
 	Py_UNICODE *pstr;
-	int i;
 
 	printf("[.] string object info\n");
 
@@ -13,11 +12,13 @@ void print_python_string(PyObject *p)
 		printf("  [ERROR] Invalid String Object\n");
 		return;
 	}
-	pstr = PyUnicode_AsUnicode(p);
-	len = PyUnicode_GetLength(p);
-	i = PyUnicode_KIND(p);
+	len = PyUnicode_GET_LENGTH(p);
+	pstr = PyUnicode_AS_UNICODE(p);
 
 	printf("  type: compact unicode object\n");
 	printf("  length: %ld\n", len);
 	printf("  value: ");
+	for (i = 0; i < length; i++)
+		printf("%lc", val[i]);
+	printf("\n");
 }
