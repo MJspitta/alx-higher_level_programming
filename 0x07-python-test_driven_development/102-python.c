@@ -18,7 +18,7 @@ void print_python_string(PyObject *p)
 	printf("  type: compact unicode object\n");
 	printf("  length: %ld\n", len);
 	printf("  value: ");
-	for (i = 0; i < length; i++)
+	for (i = 0; i < len; i++)
 		printf("%lc", val[i]);
 	printf("\n");
 }
