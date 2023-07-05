@@ -21,3 +21,11 @@
 18. List assignation
 19. Copy a list object
 20. Tuple or not?
+21. Tuple or not?
+22. Tuple or not?
+23. Tuple or not?
+24. Who I am?
+25. Tuple or not
+26. Empty is not empty
+27. Still the same?
+28. Same or not?
