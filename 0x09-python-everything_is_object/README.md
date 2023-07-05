@@ -30,3 +30,4 @@
 27. Still the same?
 28. Same or not?
 29. #pythonic
+30. Low memory cost
