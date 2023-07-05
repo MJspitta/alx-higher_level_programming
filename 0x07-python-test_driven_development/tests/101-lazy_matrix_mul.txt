@@ -1,0 +1,37 @@
+==================================================
+Test cases for function that multiplies 2 matrices
+==================================================
+
+Import the method to test
+=========================
+>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+
+Test cases
+==========
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[5, 6], [7, 8]])
+array([[19, 22], 
+	[43, 50]])
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[5, 6, 7], [8, 9, 10]])
+array([[21, 24, 27], 
+	[47, 54, 61]])
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[5, 6, 7]])
+Traceback (most recent call last):
+ValueError: m_a and m_b can't be multiplied
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [5, 6])
+Traceback (most recent call last):
+TypeError: m_a must be a list of lists or m_b must be a list of lists
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [[5, 'f'], [6, 7]])
+Traceback (most recent call last):
+TypeError: m_a should contain only integers or floats or m_b should contain only integers or floats
+
+>>> lazy_matrix_mul([[1, 2], [3, 4]], [])
+Traceback (most recent call last):
+ValueError: m_a can't be empty or m_b can't be empty
+
+>>> lazy_matrix_mul(1, [[1, 2], [3, 4]])
+Traceback (most recent call last):
+TypeError: m_a must be a list or m_b must be a list
