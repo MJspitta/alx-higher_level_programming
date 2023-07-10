@@ -1,0 +1,25 @@
+===================================
+Test cases for a BaseGeometry class
+that does not implement area and
+validates integer
+===================================
+
+Introduce modules
+===================
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Test Cases
+==========
+>>> geo = BaseGeometry()
+>>> geo.area()
+Traceback (most recent call last):
+Exception: area() is not implemented
+
+>>> geo.integer_validator("syd", 3)
+>>> geo.integer_validator("syd", -3)
+Traceback (most recent call last):
+ValueError: syd must be greater than 0
+
+>>> geo.integer_validator("syd", "abc")
+Traceback (most recent call last):
+TypeError: syd must be an integer
