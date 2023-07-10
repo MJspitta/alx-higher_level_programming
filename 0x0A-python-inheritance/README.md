@@ -5,3 +5,5 @@
 1. My list
 
 2. Exact same object
+
+3. Same class or inherit from
