@@ -1,0 +1,27 @@
+=========================================
+Test cases for class that has a function
+to print sorted list
+=========================================
+
+Import module to be tested
+==========================
+>>> MyList = __import__('1-my_list').MyList
+
+Test cases
+==========
+>>> my_list = MyList([5, 8, 2, 1, 9])
+>>> my_list.print_sorted()
+[1, 2, 5, 8, 9]
+
+>>> my_list = MyList([2])
+>>> my_list.print_sorted()
+[2]
+
+>>> my_list = MyList([])
+>>> my_list.print_sorted()
+[]
+
+>>> my_list = MyList([5, 8, 2, 'b'])
+>>> my_list.print_sorted()
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'str' and 'int'
