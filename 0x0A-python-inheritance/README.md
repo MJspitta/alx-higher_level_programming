@@ -21,3 +21,5 @@
 9. Full rectangle
 
 10. Square #1
+
+11. Square #2
