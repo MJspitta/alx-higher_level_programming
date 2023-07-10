@@ -15,3 +15,5 @@
 6. Improve Geometry
 
 7. Integer validator
+
+8. Rectangle
