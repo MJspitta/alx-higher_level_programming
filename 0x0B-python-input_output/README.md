@@ -5,3 +5,5 @@
 1. Write to a file
 
 2. Append to a file
+
+3. To JSON string
