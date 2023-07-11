@@ -13,3 +13,5 @@
 5. Save Object to a file
 
 6. Create object from a JSON file
+
+7. Load, add, save
