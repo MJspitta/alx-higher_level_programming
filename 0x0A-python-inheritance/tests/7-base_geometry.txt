@@ -16,6 +16,19 @@ Traceback (most recent call last):
 Exception: area() is not implemented
 
 >>> geo.integer_validator("syd", 3)
+>>> geo.integer_validator("width", 90)
+>>> geo.integer_validator("name", "John")
+Traceback (most recent call last):
+TypeError: name must be an integer
+
+>>> geo.integer_validator("height", 0)
+Traceback (most recent call last):
+ValueError: height must be greater than 0
+
+>>> geo.integer_validator("name", 2.5)
+Traceback (most recent call last):
+TypeError: name must be an integer
+
 >>> geo.integer_validator("syd", -3)
 Traceback (most recent call last):
 ValueError: syd must be greater than 0
@@ -23,3 +36,11 @@ ValueError: syd must be greater than 0
 >>> geo.integer_validator("syd", "abc")
 Traceback (most recent call last):
 TypeError: syd must be an integer
+
+>>> geo = BaseGeometry(23)
+Traceback (most recent call last):
+TypeError: BaseGeometry() takes no arguments
+
+>>> geo = BaseGeometry("madu")
+Traceback (most recent call last):
+TypeError: BaseGeometry() takes no arguments
