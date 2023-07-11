@@ -18,4 +18,5 @@ def add_args_list():
     new_list = curr_list + args
     save_to_json_file(new_list, "add_item.json")
 
+
 add_args_list()
