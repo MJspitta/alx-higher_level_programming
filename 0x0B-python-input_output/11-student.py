@@ -17,6 +17,6 @@ class Student:
         sdict = {attr: getattr(self, attr) for attr in attrs}
         return sdict
 
-    def relooad_from_json(self, json):
+    def reload_from_json(self, json):
         for attr, val in json.items():
             setattr(self, attr, val)
