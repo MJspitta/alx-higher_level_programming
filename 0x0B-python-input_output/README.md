@@ -17,3 +17,5 @@
 7. Load, add, save
 
 8. Class to JSON
+
+9. Student to JSON
