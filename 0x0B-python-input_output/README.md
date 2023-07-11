@@ -11,3 +11,5 @@
 4. From JSON string to object
 
 5. Save Object to a file
+
+6. Create object from a JSON file
