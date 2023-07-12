@@ -11,6 +11,7 @@ def print_stat(size, stat_codes):
     for code in sorted(stat_codes):
         print("{}: {}".format(code, stat_codes[code]))
 
+
 def comp_metrics():
     """ func that reads stdin line by line and computes metrics """
     size = 0
