@@ -19,11 +19,16 @@ def comp_metrics():
             if len(parts) >= 7:
                 stat_code = parts[-2]
                 fsize = parts[-1]
-                size += int(fsize)
-                stat_codes[stat_code] += 1
+                try:
+                    size += int(fsize)
+                except ValueError:
+                    pass
+
+                if stat_code.isdigit():
+                    stat_codes[stat_code] += 1
 
             if counter % 10 == 0:
-                print("Total file size:", size)
+                print("File size:", size)
                 for code in sorted(stat_codes.keys()):
                     print("{}: {}".format(code, stat_codes[code]))
 
