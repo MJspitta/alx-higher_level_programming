@@ -27,3 +27,5 @@
 12. Pascal's Triangle
 
 13. Search and update
+
+14. Log parsing
