@@ -7,7 +7,7 @@ from the specified class
 def inherits_from(obj, a_class):
     """ function returns True if obj is an instance
     or returns False """
-    if issubclass(type(obj), a_class) and type(obj) != a_class:
+    if a_class in type(obj).__mro__[1:]:
         return True
     else:
         return False
