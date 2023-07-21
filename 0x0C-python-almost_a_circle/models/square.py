@@ -29,6 +29,7 @@ class Square(Rectangle):
         self.height = val
 
     def update(self, *args, **kwargs):
+        """ update square attributes """
         attrib = ["id", "size", "x", "y"]
         if args:
             for i, arg in enumerate(args):
