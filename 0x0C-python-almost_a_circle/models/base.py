@@ -123,7 +123,7 @@ class Base:
                 return instances
         except FileNotFoundError:
             return []
-    
+
     @staticmethod
     def draw(list_rectangles, list_squares):
         screen = turtle.Screen()
