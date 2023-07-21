@@ -11,3 +11,5 @@
 4. Area first
 
 5. Display #0
+
+6. __str__
