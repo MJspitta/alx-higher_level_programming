@@ -54,6 +54,5 @@ class Base:
             dum = cls(1)
         else:
             dum = None
-
         dum.update(**dictionary)
         return dum
