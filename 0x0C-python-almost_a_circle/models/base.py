@@ -56,3 +56,15 @@ class Base:
             dum = None
         dum.update(**dictionary)
         return dum
+
+    @classmethod
+    def load_from_file(cls):
+        """ return a list of instances """
+        filename = cls.__name__ + ".json"
+        try:
+            with open(filename, 'r') as f:
+                json_data = f.read()
+                obj_dict = cls.from_json_string(json_data)
+                return [cls.create(**obj_dic) for obj_dic in obj_dict]
+        except FileNotFoundError:
+            return []
