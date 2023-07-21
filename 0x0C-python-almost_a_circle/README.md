@@ -35,3 +35,5 @@
 16. JSON string to file
 
 17. JSON string to dictionary
+
+18. Dictionary to Instance
