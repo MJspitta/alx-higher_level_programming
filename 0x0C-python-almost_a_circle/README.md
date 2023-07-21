@@ -21,3 +21,5 @@
 9. Update #1
 
 10. And now, the Square!
+
+11. Square size
