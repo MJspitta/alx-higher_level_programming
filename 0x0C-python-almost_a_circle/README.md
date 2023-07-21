@@ -39,3 +39,5 @@
 18. Dictionary to Instance
 
 19. File to instances
+
+20. JSON ok, but CSV?

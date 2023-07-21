@@ -3,6 +3,7 @@
 
 
 import json
+import csv
 
 
 class Base:
@@ -66,5 +67,58 @@ class Base:
                 json_data = f.read()
                 obj_dict = cls.from_json_string(json_data)
                 return [cls.create(**obj_dic) for obj_dic in obj_dict]
+        except FileNotFoundError:
+            return []
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        if list_objs is None:
+            list_objs = []
+
+        filename = cls.__name__ + ".csv"
+        with open(filename, 'w', newline='') as file:
+            writer = csv.writer(file)
+            if cls.__name__ == "Rectangle":
+                writer.writerow(["id", "width", "height", "x", "y"])
+            elif cls.__name__ == "Square":
+                writer.writerow(["id", "size", "x", "y"])
+
+            for obj in list_objs:
+                if cls.__name__ == "Rectangle":
+                    writer.writerow([
+                        obj.id, obj.width, obj.height, obj.x, obj.y
+                        ])
+                elif cls.__name__ == "Square":
+                    writer.writerow([obj.id, obj.size, obj.x, obj.y])
+
+    @classmethod
+    def load_from_file_csv(cls):
+        filename = cls.__name__ + ".csv"
+
+        try:
+            with open(filename, 'r') as f:
+                reader = csv.reader(f)
+                next(reader)
+                instances = []
+                for row in reader:
+                    data = [int(x) for x in row]
+                    obj_dict = {}
+                    if cls.__name__ == "Rectangle":
+                        obj_dict = {
+                                'id': data[0],
+                                'width': data[1],
+                                'height': data[2],
+                                'x': data[3],
+                                'y': data[4]
+                                }
+                    elif cls.__name__ == "Square":
+                        obj_dict = {
+                                'id': data[0],
+                                'size': data[1],
+                                'x': data[2],
+                                'y': data[3]
+                                }
+                    instances.append(cls.create(**obj_dict))
+                return instances
         except FileNotFoundError:
             return []
