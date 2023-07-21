@@ -25,3 +25,5 @@
 11. Square size
 
 12. Square update
+
+13. Rectangle instance to dictionary representation
