@@ -33,3 +33,5 @@
 15. Dictionary to JSON string
 
 16. JSON string to file
+
+17. JSON string to dictionary
